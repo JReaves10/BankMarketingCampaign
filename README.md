@@ -26,23 +26,24 @@ cd BankMarketingCampaign
 ## Code Explanation
 ### 1. Reading the Dataset
 We begin by importing necessary libraries (*pandas* and *numpy*) and reading the dataset using pd.read_csv()
-1
+
+![](first.png)
 
 ### 2. Creating DataFrames
 #### Client DataFrame
 Extract columns related to client information:
 
-2
+![](second.png)
 
 #### Campaign DataFrame
 Select columns related to marketing campaign details:
 
-3
+![](third.png)
 
 #### Economics DataFrame
 Subset columns with economic indicators:
 
-4
+![](fourth.png)
 
 ### 3. Cleaning and Formatting
 #### Client DataFrame Cleaning:
@@ -50,19 +51,19 @@ Subset columns with economic indicators:
 - Replace unknown in the education column with NaN.
 - Convert credit_default and mortgage columns to boolean values.
 
-5
+![](fifth.png)
 
 #### Campaign DataFrame Cleaning
 - Map campaign_outcome and previous_outcome to binary values.
 - Format the day and month columns, and create a last_contact_date column.
 - Convert date column to datetime format and remove unnecessary columns.
 
-6
+![](sixth.png)
 
 #### 4. Saving DataFrames as CSV Files
 Each DataFrame is saved to a .csv() file without including the index.
 
-7
+![](seventh.png)
 
 ## Results
 - Three cleaned and formatted .csv() files were generated: **client.csv**, **campaign.csv**, and **economics.csv**.
